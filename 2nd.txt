@@ -1,25 +1,25 @@
-//write a c program to read the input for num as integer & print the even numbers from 1 to num 
+// write a c program to print the reverse of user entered number 
 #include <stdio.h>
-int main()
-{
+int main() {
     int num;
-    printf("enter an integer:");
+    int rev=0;
+    int rem=0;
+    printf("enter a integer value:");
     scanf("%d",&num);
-    for(int i=2;i<=num;i++)
+    //condition to find the reverse of a number
+    while(num!=0)
     {
-        if(i%2==0)
-        printf("%d \n",i);
+         rem=num%10;
+         rev=rev*10+rem;
+         num/=10;
     }
+    printf("reversed number is :%d \n",rev);
     return 0;
 }
-output
 
-enter an integer:10
-2 
-4 
-6 
-8 
-10 
+output
+enter a integer value:123
+reversed number is :321 
 
 
 === Code Execution Successful ===

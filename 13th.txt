@@ -6,7 +6,7 @@ int main() {
     scanf("%d", &num);
     for (i = 1; i <=num; i++) {
         for (j = 1; j <=i; j++) {
-            printf("%d ",j);
+            printf("%c ",(96+j));
         }
         printf("\n");
     }
@@ -14,16 +14,13 @@ int main() {
 }
 
 
-output
+output 
 Enter the number: 5
-1 
-1 2 
-1 2 3 
-1 2 3 4 
-1 2 3 4 5 
+a 
+a b 
+a b c 
+a b c d 
+a b c d e 
 
 
 === Code Execution Successful ===
-
-
-
